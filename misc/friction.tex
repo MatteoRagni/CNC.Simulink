@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{array}
+\begin{document}
+\(
+ T_f(\omega, T) = \left\{
+\begin{array}{ll}
+ 0 & \omega = 0, \, T = 0 \\
+ T & \omega = 0, \, T_{stat}^{-} < T < T_{stat}^{+} \\
+ T_{stat}^{+} & \omega = 0, \, T > T_{stat}^{+} \\
+ T_{stat}^{-} & \omega = 0, \, T < T_{stat}^{-} \\
+ T_{stat}^{+} \exp\left( -\omega / \omega_{1}^{+} \right) + T_{coul}^{+} \left( 1 - \exp\left( -\omega / \omega_{1}^{+} \right) \right) & \omega > 0 \\
+ T_{stat}^{-} \exp\left( -\omega / \omega_{1}^{-} \right) + T_{coul}^{-} \left( 1 - \exp\left( -\omega / \omega_{1}^{-} \right) \right) & \omega < 0
+\end{array}
+\right.
+\)
+\end{document}
